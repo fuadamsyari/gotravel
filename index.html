@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!-- css icon dari google icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+    <!-- js animation aos css link -->
+    <link href="css/aos.css" rel="stylesheet" />
+
+    <!-- css pribadi -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Go Travel</title>
+  </head>
+  <body class="home stop-scrolling">
+    <!-- loading  -->
+    <div class="loading">
+      <div class="spinner-border text-primary justify-content-center d-flex" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="spinner-border text-success justify-content-center d-flex" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="spinner-border text-danger justify-content-center d-flex" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="spinner-border text-warning justify-content-center d-flex" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="spinner-border text-info justify-content-center d-flex" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+    <!-- akhir loading -->
+
+    <!-- navbar -->
+    <div class="conatiner-fluid">
+      <nav class="navbar navbar-expand-md navbar-light fixed-top">
+        <div class="container head">
+          <a class="navbar-brand" href="#">
+            <img src="img/logo.png" alt="" />
+            <span data-aos-delay="200" data-aos-duration="1000" data-aos="fade-down">Go Travel</span>
+          </a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link hover" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#">Services</a>
+              <a class="nav-link" href="#">Pricing</a>
+              <a class="nav-link" href="#">News</a>
+              <a class="nav-link" href="#">Contact</a>
+
+              <button type="button" class="btn btn-warning button-sch" data-bs-toggle="modal" data-bs-target="#exampleModal"><span class="material-icons btn-sch">search</span></button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- akhir navbar -->
+
+    <!-- modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Mau cari apa ngab?</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">Cari Jodoh Sana, Jomblo Mulu...</div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="getstarted" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Ini Bohongan ngab</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">Ngga Tau ah males, Pengen Beli Mazda</div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="kirim-email" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Ini juga Bohongan ngab</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">Mau Berlangganan apa ngab?, kan udah langganan korban PHP awokawokawok</div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- akhir modal -->
+
+    <!-- hero -->
+    <section id="hero">
+      <div class="hero-sec carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="1000">
+        <div class="container">
+          <span class="h-caption">
+            <h1 class="herocaption" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="200" data-aos-anchor="#example-anchor">A TRAVEL EXPERIENCE LIKE NO OTHER</h1>
+            <p class="subcaption" data-aos="fade-right" data-aos-duration="1000" data-aos-offset="200">
+              Keep the world adventurous forever Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
+              Atque delectus ex libero ipsa quis consectetur esse at accusantium blanditiis nesciunt.
+            </p>
+            <button type="button" class="btn btn-warning ms-8 hero-btn" data-bs-toggle="modal" data-bs-target="#getstarted" data-aos="zoom-in" data-aos-duration="500" data-aos-offset="250">Get Started</button>
+          </span>
+        </div>
+        <div class="carousel-inner hero-img">
+          <div class="carousel-item active">
+            <img src="img/sample1.png" class="d-block w-100" />
+          </div>
+          <div class="carousel-item">
+            <img src="img/sample2.png" class="d-block w-100" />
+          </div>
+          <div class="carousel-item">
+            <img src="img/sample3.png" class="d-block w-100" />
+          </div>
+          <div class="carousel-item">
+            <img src="img/sample4.png" class="d-block w-100" />
+          </div>
+          <div class="carousel-item">
+            <img src="img/sample5.png" class="d-block w-100" />
+          </div>
+          <div class="carousel-item">
+            <img src="img/sample6.png" class="d-block w-100" />
+          </div>
+          <div class="carousel-item">
+            <img src="img/sample7.png" class="d-block w-100" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- akhir hero -->
+
+    <!-- produk -->
+    <section id="transport">
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <div class="col judulsec text-center mx-auto">
+            <h1 class="" data-aos="fade-down" data-aos-duration="1000" data-aos-offset="100">Travel Services</h1>
+            <hr data-aos="fade-up" data-aos-duration="500" data-aos-offset="200" />
+          </div>
+        </div>
+        <div class="row produk produk1 row d-flex justify-content-center">
+          <div class="col-md-6 d-flex cart">
+            <img src="img/contain1.png" class="img-fluid ms-auto" data-aos="fade-right" data-aos-offset="300" />
+          </div>
+          <div class="col-md-5 penjelas" data-aos="fade-left" data-aos-offset="350">
+            <h1>Lorem ipsum dolor sit amet.</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas suscipit tempore quae maiores tenetur itaque voluptatem consequuntur nesciunt similique perspiciatis?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam commodi magnam amet exercitationem eaque harum culpa id beatae, deserunt molestiae quidem ad expedita laudantium in! Nisi, soluta omnis! Nisi, dolore?</p>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row produk2 produk row d-flex justify-content-center">
+          <div class="col-md-6 d-flex cart">
+            <img src="img/contain2.png" class="img-fluid" data-aos="fade-left" data-aos-offset="300" />
+          </div>
+          <div class="col-md-5 penjelas" data-aos="fade-right" data-aos-offset="350">
+            <h1>Lorem ipsum dolor sit amet.</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas suscipit tempore quae maiores tenetur itaque voluptatem consequuntur nesciunt similique perspiciatis?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam commodi magnam amet exercitationem eaque harum culpa id beatae, deserunt molestiae quidem ad expedita laudantium in! Nisi, soluta omnis! Nisi, dolore?</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- akhir Produk -->
+
+    <!-- video section -->
+    <section id="video">
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <div class="col judulsec text-center mx-auto">
+            <h1 class="" data-aos="fade-down" data-aos-duration="1000" data-aos-offset="200">Indonesian Travel</h1>
+            <hr data-aos="fade-up" data-aos-duration="500" data-aos-offset="300" />
+          </div>
+        </div>
+        <div class="col">
+          <div class="row justify-content-center" data-aos="zoom-in" data-aos-offset="400">
+            <div class="ratio ratio-16x9">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/_IzOqfrLc0o"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- akhir video section -->
+
+    <!-- card -->
+    <section id="card">
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <div class="col judulsec text-center mx-auto">
+            <h1 class="" data-aos="fade-down" data-aos-duration="1000" data-aos-offset="200">Indonesian Destination</h1>
+            <hr data-aos="fade-up" data-aos-duration="500" data-aos-offset="300" />
+          </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+          <div class="col-md mb-5" data-aos="zoom-in" data-aos-offset="300" data-aos-delay="0">
+            <a href="" class="kartu">
+              <div class="card mx-auto" style="width: 18rem">
+                <img src="img/thumbnail/bali.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Bali</h5>
+                  <p class="card-text">
+                    Bali adalah sebuah ibukota di Indonesia yang ibu kotanya bernama Denpasar. Bali juga merupakan salah satu pulau di Kepulauan Nusa Tenggara. Bali terkenal sebagai tujuan pariwisata dengan keunikan berbagai hasil
+                    seni-budayanya
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md mb-5" data-aos="zoom-in" data-aos-offset="300" data-aos-delay="100">
+            <a href="" class="kartu">
+              <div class="card mx-auto" style="width: 18rem">
+                <img src="img/thumbnail/bandung.webp" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Bandung</h5>
+                  <p class="card-text">
+                    Bandung adalah kota metropolitan terbesar di Provinsi Jawa Barat, sekaligus menjadi ibu kota provinsi tersebut. Kota ini terletak 140 km sebelah tenggara Jakarta, dan merupakan kota terbesar di wilayah Pulau Jawa bagian
+                    barat.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md mb-5" data-aos="zoom-in" data-aos-offset="300" data-aos-delay="200">
+            <a href="" class="kartu">
+              <div class="card mx-auto" style="width: 18rem">
+                <img src="img/thumbnail/jakarta.webp" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Jakarta</h5>
+                  <p class="card-text">
+                    Jakarta adalah ibu kota negara dan kota terbesar di Indonesia. Jakarta merupakan satu-satunya kota di Indonesia yang memiliki status setingkat provinsi. Jakarta terletak di pesisir bagian barat laut Pulau Jawa.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md mb-5" data-aos="zoom-in" data-aos-offset="300" data-aos-delay="0">
+            <a href="" class="kartu">
+              <div class="card mx-auto" style="width: 18rem">
+                <img src="img/thumbnail/labuan bajo.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Labuan Bajo</h5>
+                  <p class="card-text">
+                    Labuan Bajo merupakan salah satu desa dari 19 desa dan kelurahan yang berada di kecamatan Komodo, Kabupaten Manggarai Barat, provinsi Nusa Tenggara Timur, Indonesia. Labuan Bajo sebelumnya adalah kelurahan sekaligus ibu
+                    kota, Sekarang dikembangkan menjadi Kota Labuan Bajo
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md mb-5" data-aos="zoom-in" data-aos-offset="300" data-aos-delay="100">
+            <a href="" class="kartu">
+              <div class="card mx-auto" style="width: 18rem">
+                <img src="img/thumbnail/lombok.webp" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Lombok</h5>
+                  <p class="card-text">
+                    Lombok adalah sebuah pulau di kepulauan Sunda Kecil atau Nusa Tenggara yang terpisahkan oleh Selat Lombok dari Bali di sebelah barat dan Selat Alas di sebelah timur dari Sumbawa. Pulau ini kurang lebih berbentuk bulat
+                    dengan semacam "ekor".
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md mb-5" data-aos="zoom-in" data-aos-offset="300" data-aos-delay="200">
+            <a href="" class="kartu">
+              <div class="card mx-auto" style="width: 18rem">
+                <img src="img/thumbnail/semarang.webp" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Semarang</h5>
+                  <p class="card-text">
+                    Semarang adalah ibu kota Provinsi Jawa Tengah, Indonesia sekaligus kota metropolitan terbesar kelima di Indonesia setelah Jakarta, Surabaya, Medan, dan Bandung. Sebagai salah satu kota paling berkembang di Pulau Jawa.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md mb-5" data-aos="zoom-in" data-aos-offset="300" data-aos-delay="0">
+            <a href="" class="kartu">
+              <div class="card mx-auto" style="width: 18rem">
+                <img src="img/thumbnail/solo.webp" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Solo</h5>
+                  <p class="card-text">
+                    Surakarta/solo merupakan kota terbesar ketiga di pulau Jawa bagian Selatan. Sisi Timur kota ini dilewati sungai yang terabadikan dalam salah satu lagu keroncong, Bengawan Solo. Bersama dengan Yogyakarta, Surakarta
+                    merupakan pewaris Kesultanan Mataram yang dipecah melalui Perjanjian Giyanti, pada tahun 1755.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md mb-5" data-aos="zoom-in" data-aos-offset="300" data-aos-delay="100">
+            <a href="" class="kartu">
+              <div class="card mx-auto" style="width: 18rem">
+                <img src="img/thumbnail/toba.webp" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Toba</h5>
+                  <p class="card-text">
+                    Danau Toba adalah danau alami berukuran besar di Indonesia yang berada di kaldera Gunung Supervulkan. wisata yang terkenal yaitu wisata air rangat tepatnya di bawah kaki gunung pusuk buhit, air rangat berasal dari gunung
+                    yang meletus dan Pusuk Buhit sendiri adalah sebuah gunung aktif.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md mb-5" data-aos="zoom-in" data-aos-offset="300" data-aos-delay="200">
+            <a href="" class="kartu">
+              <div class="card mx-auto" style="width: 18rem">
+                <img src="img/thumbnail/yogyakarta.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Yogyakarta</h5>
+                  <p class="card-text">
+                    Daerah Istimewa Yogyakarta terletak di bagian selatan Pulau Jawa, dan berbatasan dengan Provinsi Jawa Tengah dan Samudera Hindia. Daerah Istimewa ini terkenal di tingkat nasional, dan internasional, terutama sebagai
+                    tempat tujuan wisata andalan setelah Provinsi Bali.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- akhir card -->
+
+    <!-- form paralax -->
+    <section id="form-email">
+      <div class="parallax">
+        <div class="container">
+          <div class="form-blur text-center">
+            <div class="row justify-content-center">
+              <div class="col-sm-10 mt-4">
+                <h1>Dapatkan E-Book Travel Gratis dengan Berlangganan</h1>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-sm-6"><input class="form-control mt-5 type="email" placeholder="Tulis Email kamu disini nih" aria-label="default input example" /></div>
+                <div class="row justify-content-center">
+                  <div class="col-sm-auto">
+                    <button type="button" data-bs-toggle="modal" data-bs-target="#kirim-email" class="btn btn-warning mt-5 btn-email">Berlangganan</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- akhir form paralax -->
+
+    <!-- section panduan perjalanan -->
+    <section id="panduan">
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <div class="col judulsec text-center mx-auto">
+            <h1 class="" data-aos="fade-down" data-aos-duration="1000" data-aos-offset="200">Panduan Perjalanan</h1>
+            <hr data-aos="fade-up" data-aos-duration="500" data-aos-offset="300" />
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md mb-3 add" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">
+            <a href="">
+              <div class="card bg-light text-white overflow-hidden infoimg">
+                <img src="img/thumbnail/info1.webp" class="card-img" alt="..." />
+                <div class="card-img-overlay d-flex">
+                  <h5 class="card-title align-items-end d-flex">Indonesia Care</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md mb-3 add" data-aos="fade-down" data-aos-delay="200" data-aos-duration="1000">
+            <a href="">
+              <div class="card bg-light text-white overflow-hidden infoimg">
+                <img src="img/thumbnail/info2.webp" class="card-img" alt="..." />
+                <div class="card-img-overlay d-flex">
+                  <h5 class="card-title align-items-end d-flex">E-Visa</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md mb-3 add" data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000">
+            <a href="">
+              <div class="card bg-light text-white overflow-hidden infoimg">
+                <img src="img/thumbnail/info3.webp" class="card-img" alt="..." />
+                <div class="card-img-overlay d-flex">
+                  <h5 class="card-title align-items-end d-flex">Informasi Umum</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- akhir paduan perjalanan -->
+
+    <!-- support -->
+    <section id="support">
+      <div class="container">
+        <div class="row mt-5 mb-5 justify-content-between brand d-flex">
+          <div class="col-md justify-content-center align-items-center d-flex">
+            <img class="" src="img/brand/b1.png" alt="" />
+          </div>
+          <div class="col-md justify-content-center align-items-center d-flex">
+            <img class="" src="img/brand/b2.png" alt="" />
+          </div>
+          <div class="col-md justify-content-center align-items-center d-flex">
+            <img class="" src="img/brand/b3.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- akhir Support -->
+
+    <!-- footer -->
+    <footer>
+      <div class="footer">
+        <div class="row">
+          <div class="col-md">
+            <h4>Go Travel</h4>
+            <br />
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id excepturi qui labore eius repellendus veniam! Error temporibus aspernatur unde odio.</p>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem illum, sit eius doloribus modi minima, molestiae reprehenderit dolores provident suscipit nisi quis velit aliquid ad tempore! Saepe doloremque voluptas distinctio.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, dolore.</p>
+          </div>
+          <div class="col-md">
+            <h4>VIsi Misi</h4>
+            <br />
+            <h6>Visi</h6>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus deserunt dignissimos laudantium, magni nam eum sint accusamus voluptates, sed incidunt, optio quasi! Voluptate, dignissimos inventore?</p>
+            <h6>Misi</h6>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione laborum nihil quidem impedit! Quas qui tempore, illum quia ipsa maiores?</p>
+          </div>
+          <div class="col-md">
+            <h4>JEJARING SOSIAL</h4>
+            <br />
+            <div class="media row d-flex">
+              <div class="item-media m-1 col justify-content-center d-flex">
+                <a href="https://github.com/fuadamsyari" target="blank">
+                  <img src="img/icon/gihub.png" alt="" />
+                </a>
+              </div>
+              <div class="item-media m-1 col justify-content-center d-flex">
+                <a href="https://www.instagram.com/fuadamsyr/" target="blank">
+                  <img src="img/icon/ig.png" alt="" />
+                </a>
+              </div>
+              <div class="item-media m-1 col justify-content-center d-flex">
+                <a href="https://www.facebook.com/ahmadfuadamsyari" target="blank">
+                  <img src="img/icon/fb.png" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <h4>HUBUNGI KAMI</h4>
+            <br />
+            <br />
+            <h5 class="text-align-center d-flex"><span class="material-icons ikon"> home </span>&nbsp;Pati, Jawa Tengah</h5>
+            <br />
+            <h5 class="text-align-center d-flex"><span class="material-icons"> account_box </span>&nbsp;0895 - 2221 - 5156</h5>
+            <br />
+            <h5 class="text-align-center d-flex"><span class="material-icons">email</span>&nbsp;ahmadfuadamsyari@gmail.com</h5>
+          </div>
+        </div>
+        <div class="row justify-content-center d-flex mt-5 pb-5">
+          <div class="col-md-12 justify-content-center d-flex text-footer">
+            <p class="">&#169; Copyright 2021 | Fuad Amsyari</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- akhir footer -->
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- jquery -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+
+    <!-- js pribadi -->
+    <script src="js/script.js"></script>
+
+    <!-- js dari animation aos -->
+    <script src="js/aos.js"></script>
+    <script>
+      AOS.init({});
+    </script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

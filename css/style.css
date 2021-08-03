@@ -1,0 +1,361 @@
+/* font google import */
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&family=Teko:wght@500&family=Titillium+Web&display=swap');
+/* mobile view */
+
+body,
+html {
+  overflow-x: hidden;
+}
+
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden !important;
+  position: fixed;
+}
+
+.loading {
+  z-index: 999999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.582);
+  right: 0;
+  position: fixed;
+  backdrop-filter: blur(10px);
+}
+
+nav {
+  z-index: 9;
+  background-color: rgb(240, 240, 240);
+}
+.navbar-brand {
+  font-family: 'Teko', sans-serif;
+}
+
+.navbar-nav a {
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.btn-sch {
+  line-height: 100%;
+}
+
+.h-caption {
+  color: WHITE;
+  margin-top: 0.5%;
+  z-index: 2;
+  position: absolute;
+  width: 83%;
+  font-size: 0.8em;
+  flex-direction: column;
+}
+
+.hero-sec {
+  margin-top: 64px;
+}
+
+.herocaption {
+  font-family: 'Titillium Web', sans-serif;
+  text-shadow: 1px 1px 3px black;
+}
+
+.subcaption,
+.btn {
+  font-family: 'Titillium Web', sans-serif;
+  text-shadow: 1px 1px 1px black;
+}
+
+.btn {
+  border-radius: 30px;
+  font-family: 'Titillium Web', sans-serif;
+  text-shadow: none;
+}
+
+.hero-btn {
+  transform: scale(0.7) !important;
+  margin-top: -10px;
+}
+
+.produk img {
+  border-radius: 30px;
+  box-shadow: 1px 1px 10px black;
+  margin: auto;
+}
+
+.penjelas {
+  margin: auto;
+  text-align: center;
+}
+
+hr {
+  width: 50%;
+  margin: 0 auto;
+  border: 2px solid black;
+}
+.container .cart img {
+  transition: all 0.5s;
+}
+
+.container .cart img:hover {
+  transform: scale(0.9) rotate(12deg) !important;
+}
+
+#transport,
+#video,
+#card,
+#panduan {
+  background: rgb(255, 249, 198);
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+#video,
+#panduan {
+  background-color: rgb(255, 240, 189);
+}
+
+.judulsec {
+  margin-bottom: 10%;
+}
+
+.kartu {
+  text-decoration: none;
+  color: black;
+}
+
+.kartu:hover {
+  color: #777777;
+}
+
+.card {
+  transition: all 0.5s;
+  box-shadow: 1px 1px 3px black;
+}
+
+a.kartu:hover .card {
+  transform: scale(0.8) skew(3deg, 3deg);
+  box-shadow: 1px 1px 8px orange;
+}
+
+.card img {
+  transition: 1s;
+}
+
+a.kartu:hover .card img {
+  transform: scale(1.3);
+  box-shadow: 1px 1px 8px orange;
+}
+
+.parallax {
+  background-image: url(../img/thumbnail/images.webp);
+  display: flex;
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.container .form-blur {
+  background-color: rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  color: white;
+  font-family: 'Titillium Web', sans-serif;
+  border-radius: 40px;
+  box-shadow: 0 0 20px black;
+  margin: 5% 0;
+  backdrop-filter: blur(3px);
+  min-height: 70%;
+}
+
+.form-control {
+  border-radius: 20px;
+}
+
+.infoimg img {
+  transition: all 0.5s;
+}
+
+.add:hover .infoimg img {
+  transform: scale(1.4);
+}
+
+.brand img {
+  transform: scale(0.8);
+  margin-top: -50px;
+  margin-bottom: -50px;
+}
+
+.footer {
+  width: 100%;
+  font-family: 'Titillium Web', sans-serif;
+  height: 100%;
+  padding: 0 3%;
+  color: white;
+  background-image: url(../img/footer/dark-grey-terrazzo.png);
+  background-attachment: fixed;
+  bottom: 0;
+  z-index: -9;
+}
+
+footer h4 {
+  margin: 0;
+  padding-top: 10px;
+  text-align: center;
+  color: #ddd;
+}
+
+.text-footer p {
+  font-size: 20px !important;
+}
+
+.item-media img {
+  transition: all 0.5s;
+  transform: rotateY(0) rotateZ(0) rotateX(0) scale(1.2);
+}
+
+.item-media:hover img {
+  transform: rotateY(360deg) rotateZ(360deg) rotateX(360deg) scale(1.3);
+  cursor: pointer;
+}
+
+footer h4 {
+  margin-left: 10px !important;
+  padding: 10px;
+}
+
+/* 
+
+
+
+*/
+
+/* // Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 654px) {
+  .herocaption {
+    font-size: 50px;
+  }
+
+  .subcaption,
+  .btn {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 774px) {
+  .herocaption {
+    font-size: 60px;
+  }
+
+  .subcaption,
+  .btn {
+    font-size: 20px;
+  }
+}
+/* 
+
+
+
+
+
+*/
+/* dekstop view */
+/* // Large devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+  nav {
+    text-transform: uppercase;
+    background-color: rgba(255, 255, 255, 0);
+  }
+  .head {
+    background-color: rgba(255, 255, 255, 0.26);
+    border-radius: 30px;
+    box-shadow: 0 0 15px rgb(85, 85, 85);
+    backdrop-filter: blur(3px);
+  }
+
+  .navbar-brand span {
+    color: white;
+  }
+
+  .navbar-nav a.nav-link {
+    margin-left: 30px;
+    margin-right: 10px;
+    padding: 2%;
+    color: white !important;
+    font-size: 17px;
+    text-shadow: 1px 1px 1px black;
+  }
+
+  .navbar-nav a:hover::after {
+    content: '';
+    display: block;
+    background-color: #ffc107;
+    border: 2px solid #ffc107;
+    width: 50%;
+    margin: auto;
+    margin-bottom: -4px;
+  }
+
+  .navbar-brand {
+    font-size: 30px;
+    text-shadow: 1px 1px 1px black;
+  }
+
+  .btn-sch {
+    line-height: 100%;
+    padding-top: 20%;
+  }
+
+  .button-sch {
+    transition: all 0.5s;
+    transform: scale(0.8);
+  }
+  .button-sch:hover {
+    position: relative;
+    transform: scale(1.2);
+  }
+
+  .hero-sec {
+    margin-top: 0px;
+  }
+
+  .h-caption {
+    margin: 15% auto auto auto;
+  }
+  .herocaption {
+    font-size: 80px;
+    font-weight: bold;
+  }
+
+  .hero-btn {
+    transform: scale(1) !important;
+    margin-top: 10px;
+  }
+
+  .subcaption,
+  .btn {
+    font-size: 20px;
+  }
+
+  .produk2 {
+    flex-direction: row-reverse !important;
+  }
+
+  .produk .penjelas {
+    text-align: left;
+  }
+
+  .btn-email {
+    margin-top: -40px;
+  }
+
+  .brand img {
+    transform: scale(1);
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}
